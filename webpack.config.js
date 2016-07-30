@@ -1,7 +1,14 @@
 module.exports = {
-  entry: "./src/index.tsx",
+
+  entry: {
+    app: './src/index.tsx'
+  },
+
   output: {
-    filename: "./dist/bundle.js",
+    path: require("path").resolve("./build/"),
+    filename: '[name].js',
+    publicPath: '',
+    sourceMapFilename: '[name].js.map',
   },
 
   // Enable sourcemaps for debugging webpack's output.
