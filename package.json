@@ -5,6 +5,7 @@
   "main": "helloworld.js",
   "scripts": {
     "start": "node server",
+    "test": "webpack",
     "changelog": "conventional-changelog --infile CHANGELOG.md --same-file --release-count 0 --preset angular"
   },
   "author": "",
